@@ -27,6 +27,14 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
+.titleText {
+    font-size: 3em;
+    color: black;
+}
+.qText {
+    color: black;
+}
+
 .bloc {
     width: 100%;
     clear: both;
@@ -88,6 +96,7 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    pointer-events: none;
 }
 
 .texture-paper::before {
@@ -317,7 +326,6 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
     float: right;
     z-index: 1;
 }
@@ -647,13 +655,15 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn
+ {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: rgb(39, 39, 39)!important;
 }
-
+a {
+    color: rgb(235, 238, 255);
+}
 .container {
     max-width: 1000px;
 }
@@ -753,7 +763,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(35, 31, 32, 0.7);
+    background-color: rgba(35, 31, 32, 0.95);
     padding: 40px 40px 40px 40px;
 }
 
@@ -781,7 +791,7 @@ h4 {
 }
 
 .tc-white {
-    color: #364577!important;
+    color: #bccbff!important;
 }
 
 .btn-atomic-tangerine {
@@ -1033,6 +1043,8 @@ h4 {
         height: 320px;
     }
 }
+
+
 
 @media (max-width: 400px) {
     .bloc {
